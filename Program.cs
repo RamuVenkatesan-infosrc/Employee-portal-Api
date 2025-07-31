@@ -6,8 +6,12 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+<<<<<<< HEAD
 builder.Services.AddSingleton<EmployeeServices>();
 builder.Services.AddSingleton<TokenService>();
+=======
+builder.Services.AddSingleton<EmployeesPortal.Service.EmployeeServices>();
+>>>>>>> 5498fcd8ef2cff08cfd806cf401b71c4804c33f8
 builder.Services.AddControllers();
 
 
@@ -62,8 +66,17 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
+<<<<<<< HEAD
 app.UseSwagger();
 app.UseSwaggerUI();
+=======
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+>>>>>>> 5498fcd8ef2cff08cfd806cf401b71c4804c33f8
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
