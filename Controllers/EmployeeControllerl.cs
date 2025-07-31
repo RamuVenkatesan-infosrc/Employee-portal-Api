@@ -1,10 +1,11 @@
 ﻿using EmployeesPortal.Model;    // Using the Employee class
 using EmployeesPortal.Service;  // Using the service to manage employee logic
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc; // Required for building API controllers
 
 namespace EmployeesPortal.Controllers
 {
-    
+    [Authorize]
     [ApiController]
 
     

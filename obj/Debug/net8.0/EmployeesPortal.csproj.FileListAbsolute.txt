@@ -29,3 +29,13 @@ C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\obj\Debug\net8.0\refint\Employee
 C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\obj\Debug\net8.0\EmployeesPortal.pdb
 C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\obj\Debug\net8.0\EmployeesPortal.genruntimeconfig.cache
 C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\obj\Debug\net8.0\ref\EmployeesPortal.dll
+C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\obj\Debug\net8.0\EmployeesPortal.sourcelink.json
+C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\bin\Debug\net8.0\jose-jwt.dll
+C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\RamuVenkatesan\Desktop\EmployeesPortal\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
