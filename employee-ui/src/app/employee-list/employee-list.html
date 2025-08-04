@@ -1,0 +1,48 @@
+<div class="employee-list">
+  <h2>Employee List</h2>
+
+  <div class="employee-form">
+    <input type="text" [(ngModel)]="newEmployee.name" placeholder="Name">
+    <input type="text" [(ngModel)]="newEmployee.designation" placeholder="Designation">
+    <input type="text" [(ngModel)]="newEmployee.department" placeholder="Department">
+    <input type="number" [(ngModel)]="newEmployee.salary" placeholder="Salary">
+    <button (click)="addEmployee()" class="add-button">Add Employee</button>
+  </div>
+
+  <table class="employee-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>
+          <span *ngIf="editId !== emp.id">{{ emp.name }}</span>
+          <input *ngIf="editId === emp.id" [(ngModel)]="emp.name">
+        </td>
+        <td>
+          <span *ngIf="editId !== emp.id">{{ emp.designation }}</span>
+          <input *ngIf="editId === emp.id" [(ngModel)]="emp.designation">
+        </td>
+        <td>
+          <span *ngIf="editId !== emp.id">{{ emp.department }}</span>
+          <input *ngIf="editId === emp.id" [(ngModel)]="emp.department">
+        </td>
+        <td>
+          <span *ngIf="editId !== emp.id">Rs.{{ emp.salary }}</span>
+          <input *ngIf="editId === emp.id" type="number" [(ngModel)]="emp.salary">
+        </td>
+       <td>
+  <button *ngIf="editId !== emp.id" (click)="startEdit(emp.id)" class="edit-btn">Edit</button>
+  <button *ngIf="editId === emp.id" (click)="saveEdit(emp)" class="save-btn">Save</button>
+  <button (click)="deleteEmployee(emp.id)" class="delete-btn">Delete</button>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

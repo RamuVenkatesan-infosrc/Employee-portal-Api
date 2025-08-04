@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Table</h1>
+
+    <input type="text" id="searchInput" placeholder="Search by name..." onkeyup="filterTable()">
+
+    <table border="1" id="studentTable">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>20</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>22</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>Michael Lee</td>
+                <td>19</td>
+                <td>Tokyo</td>
+            </tr>
+            <tr>
+                <td>Sara Khan</td>
+                <td>21</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>David Kim</td>
+                <td>23</td>
+                <td>Sydney</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

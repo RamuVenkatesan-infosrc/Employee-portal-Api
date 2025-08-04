@@ -1,0 +1,121 @@
+.employee-list {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.employee-list h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333333;
+}
+
+/* Add Employee Form */
+.employee-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.employee-form input {
+  padding: 0.5rem;
+  width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.employee-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.add-button {
+  padding: 0.5rem 1.2rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-button:hover {
+  background: #218838;
+}
+
+/* Table Styling */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.employee-table td {
+  padding: 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* Editable Inputs */
+.employee-table input {
+  width: 90%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Action Buttons */
+button {
+  padding: 0.3rem 0.8rem;
+  margin: 0 0.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Specific Button Colors */
+button.edit-btn {
+  background-color: #007bff; /* Blue */
+  color: white;
+}
+
+button.save-btn {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+button.delete-btn {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .employee-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .employee-form input {
+    width: 100%;
+  }
+}
